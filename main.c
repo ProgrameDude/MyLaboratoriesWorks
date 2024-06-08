@@ -1,8 +1,21 @@
 # include <assert.h>
 # include "libs/data_structures/matrix/matrix.h"
 
-void test() {
+void test_inputMatrix_notEmptyMatrix() {
+    matrix mtx = getMemMatrix(2, 3);
+    inputMatrix(&mtx);
+    outputMatrix(mtx);
+}
 
+void test_inputMatrices_notEmptyMatrix() {
+    matrix *mtx = getMemArrayOfMatrices(2, 2, 3);
+    inputMatrices(mtx, 2);
+    outputMatrices(mtx, 2);
+}
+
+void test() {
+    test_inputMatrix_notEmptyMatrix();
+    test_inputMatrices_notEmptyMatrix();
 }
 
 int main() {

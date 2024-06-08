@@ -46,4 +46,3 @@ void outputMatrix(matrix m);
 void outputMatrices(matrix *ms, int nMatrices);
 
 #endif //LABORATORIESWORKS_MATRIX_H
-

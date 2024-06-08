@@ -1,3 +1,5 @@
 D:/CLionProjects/course/cmake-build-debug/CMakeFiles/course.dir
 D:/CLionProjects/course/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLionProjects/course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/CLionProjects/course/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
+D:/CLionProjects/course/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir

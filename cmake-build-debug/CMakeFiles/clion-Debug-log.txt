@@ -1,10 +1,23 @@
 "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\CLionProjects\course -B D:\CLionProjects\course\cmake-build-debug
-CMake Error at libs/CMakeLists.txt:1 (add_subdirectory):
-  The source directory
+-- Configuring done (0.2s)
+CMake Error at libs/data_structures/CMakeLists.txt:1 (add_library):
+  Cannot find source file:
 
-    D:/CLionProjects/course/libs/data_structures
-
-  does not contain a CMakeLists.txt file.
+    vector/vectorVoid.c
 
 
--- Configuring incomplete, errors occurred!
+CMake Error at libs/algorithms/CMakeLists.txt:1 (add_library):
+  Cannot find source file:
+
+    algorithm.c
+
+
+CMake Error at libs/data_structures/CMakeLists.txt:1 (add_library):
+  No SOURCES given to target: data_structures
+
+
+CMake Error at libs/algorithms/CMakeLists.txt:1 (add_library):
+  No SOURCES given to target: algorithms
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

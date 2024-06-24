@@ -3,7 +3,8 @@ project(LaboratoriesWorks C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(LaboratoriesWorks main.c)
+add_executable(LaboratoriesWorks main.c
+        libs/data_structures/string/string_.c)
 add_subdirectory(libs)
 target_link_libraries(LaboratoriesWorks data_structures)
 target_link_libraries(LaboratoriesWorks algorithms)

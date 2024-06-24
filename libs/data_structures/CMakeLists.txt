@@ -2,8 +2,8 @@ add_library(data_structures
         vector/vector.c
         vector/vectorVoid.c
         matrix/matrix.c
-        string_/string_.c
-        string_/string_.h
+        string/string_.c
+        string/string_.h
         flow/flow.c
         tasks20/tasks20.c
 )

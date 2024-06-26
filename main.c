@@ -74,3 +74,24 @@ void test_findSpaceReverse_noNonSpace() {
     char word[7] = {'A', 'B', 'C', '\0'};
     assert(findSpaceReverse(word + strlen_(word) - 1, word - 1) == word - 1);
 }
+
+// lhs = rhs
+void test_strcmp_equal() {
+    char lhs[4] = {'A', 'B', 'C', '\0'};
+    char rhs[4] = {'A', 'B', 'C', '\0'};
+    assert(strcmp(lhs, rhs) == 0);
+}
+
+// lhs < rhs
+void test_strcmp_less() {
+    char lhs[4] = {'A', 'B', 'C', '\0'};
+    char rhs[4] = {'A', 'B', 'D', '\0'};
+    assert(strcmp(lhs, rhs) < 0);
+}
+
+// lhs > rhs
+void test_strcmp_more() {
+    char lhs[4] = {'A', 'B', 'D', '\0'};
+    char rhs[4] = {'A', 'B', 'C', '\0'};
+    assert(strcmp(lhs, rhs) > 0);
+}
